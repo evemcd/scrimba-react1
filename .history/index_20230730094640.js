@@ -115,7 +115,3 @@ const samplePage = (
 
 //Challenge 6: fix the code
 
-ReactDOM.render(
-    samplePage,
-    document.getElementById("root")
-)

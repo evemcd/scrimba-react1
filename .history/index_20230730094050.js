@@ -93,7 +93,7 @@ Challenge 5: find out what happens if we try to append JSX to our div#root using
 4. See if you can explain what actually shows up in the browser
  */
 
-const samplePage = (
+const samplePage (
     <div>
         <h1>Headline</h1>
         <p>This is just gibberish to fill the space.</p>
@@ -104,18 +104,4 @@ const samplePage = (
             <li>Sleep</li>
         </ol>
     </div>
-)
-
-//document.getElementById("root").append(samplePage)
-//returns [object Object]
-//document.getElementById("root").append(JSON.stringify(samplePage))
-//returns a Javascript object
-//React needs to be rendered to translate the code into something useable
-
-
-//Challenge 6: fix the code
-
-ReactDOM.render(
-    samplePage,
-    document.getElementById("root")
 )

@@ -60,6 +60,7 @@ Create a navbar in JSX:
     - Insert an unordered list for the other nav elements 
     - Inside the `ul`, have three `li`s for "Pricing", "About", and "Contact"
     - Don't worry about styling yet - it'll just be plain-looking HTML for now
+*/
 
 const navbar = (
     <nav>
@@ -77,45 +78,10 @@ ReactDOM.render(
     document.getElementById("root")
 )
 
-
-Changes in React 18:
+/*Changes in React 18:
 17: ReactDOM.render(navbar, document.getElementById("root"))
 18: ReactDOM.createRoot(document.getElementById("root")).render(navbar)
 OR
 18: const root = ReactDOM.createRoot(document.getElementById("root"))
     root.render(navbar)
-
-
-Challenge 5: find out what happens if we try to append JSX to our div#root using .append() instead of ReactDOM
-1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
-2. Select the div with the ID of "root" and use `.append()` to append your JSX
-3. See if you can guess what will show up in the browser before running the code
-4. See if you can explain what actually shows up in the browser
- */
-
-const samplePage = (
-    <div>
-        <h1>Headline</h1>
-        <p>This is just gibberish to fill the space.</p>
-        <h2>My priorities:</h2>
-        <ol>
-            <li>Food</li>
-            <li>Drink</li>
-            <li>Sleep</li>
-        </ol>
-    </div>
-)
-
-//document.getElementById("root").append(samplePage)
-//returns [object Object]
-//document.getElementById("root").append(JSON.stringify(samplePage))
-//returns a Javascript object
-//React needs to be rendered to translate the code into something useable
-
-
-//Challenge 6: fix the code
-
-ReactDOM.render(
-    samplePage,
-    document.getElementById("root")
-)
+*/

@@ -107,15 +107,4 @@ const samplePage = (
 )
 
 //document.getElementById("root").append(samplePage)
-//returns [object Object]
-//document.getElementById("root").append(JSON.stringify(samplePage))
-//returns a Javascript object
-//React needs to be rendered to translate the code into something useable
-
-
-//Challenge 6: fix the code
-
-ReactDOM.render(
-    samplePage,
-    document.getElementById("root")
-)
+//returns 
