@@ -14,7 +14,6 @@ header {
 
 .nav-logo {
     width: 40px;
-    padding: 20px;
 }
 
 .nav-items {
@@ -31,5 +30,4 @@ header {
     background-color: slategrey;
     color: aliceblue;
     padding: 10px 30px;
-    text-align: right;
 }

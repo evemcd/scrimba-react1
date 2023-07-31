@@ -18,7 +18,7 @@ function Header() {
     return (
         <header>
             <nav className="nav">
-                <img src="./react-logo.png" className="nav-logo" />
+                <img src="./react-logo.png" className="logoImg" />
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>
@@ -44,7 +44,7 @@ function Content() {
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer>
             <small>© 2023 McDermott development. All rights reserved.</small>
         </footer>
     )
