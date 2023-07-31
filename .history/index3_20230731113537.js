@@ -35,9 +35,7 @@ function Content() {
 
 function Footer() {
     return (
-        <footer>
-            <small>© 2023 McDermott development. All rights reserved.</small>
-        </footer>
+        <p>© 2023 McDermott development. All rights reserved.</p>
     )
 }
 

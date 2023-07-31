@@ -20,9 +20,16 @@ function Header() {
     )
 }
 
-function Content() {
+function Footer() {
+    return (
+        <p>© 2023 McDermott development. All rights reserved.</p>
+    )
+}
+
+function Page() {
     return (
         <div>
+            <Header />
             <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>To expand on my knowledge</li>
@@ -33,27 +40,10 @@ function Content() {
     )
 }
 
-function Footer() {
-    return (
-        <footer>
-            <small>© 2023 McDermott development. All rights reserved.</small>
-        </footer>
-    )
-}
-
-function Page() {
-    return (
-        <div>
-            <Header />
-            <Content />
-            <Footer />
-        </div>
-    )
-}
-
 ReactDOM.render(
     <div>
         <Page />
+        <Footer />
     </div>,
     document.getElementById("root")
 )

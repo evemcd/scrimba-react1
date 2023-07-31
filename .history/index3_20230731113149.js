@@ -10,7 +10,7 @@ Part 2:
 - Add a `footer` after the list that says: "© 20xx <last name here> development. All rights reserved."
  */
 
-function Header() {
+function HeaderComponent() {
     return (
         <header>
             <nav>
@@ -20,9 +20,10 @@ function Header() {
     )
 }
 
-function Content() {
+function PageComponent() {
     return (
         <div>
+            <HeaderComponent />
             <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>To expand on my knowledge</li>
@@ -33,27 +34,16 @@ function Content() {
     )
 }
 
-function Footer() {
+function FooterComponent() {
     return (
-        <footer>
-            <small>© 2023 McDermott development. All rights reserved.</small>
-        </footer>
-    )
-}
-
-function Page() {
-    return (
-        <div>
-            <Header />
-            <Content />
-            <Footer />
-        </div>
+        <p>© 2023 McDermott development. All rights reserved.</p>
     )
 }
 
 ReactDOM.render(
     <div>
-        <Page />
+        <PageComponent />
+        <FooterComponent />
     </div>,
     document.getElementById("root")
 )
