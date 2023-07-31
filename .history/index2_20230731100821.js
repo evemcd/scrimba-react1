@@ -31,4 +31,3 @@ ReactDOM.render(
     section,
     document.getElementById("root")
 )
-

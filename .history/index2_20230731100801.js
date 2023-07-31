@@ -28,7 +28,6 @@ const section = (
 )
 
 ReactDOM.render(
-    section,
+    <h1>lalal</h1> >,
     document.getElementById("root")
 )
-

@@ -11,7 +11,7 @@ Hints:
   element
 * You can also set the `width` attribute of the image element
   just like in HTML. In the slide, I have it set to 40px
- */
+
 
 const section = (
     <div>
@@ -32,3 +32,26 @@ ReactDOM.render(
     document.getElementById("root")
 )
 
+ */
+
+
+function PageComponent() {
+    return (
+        <div>
+            <img scr="./react-logo.png" />
+            <h1>Reasons why I'm excited to learn React:</h1>
+            <ol>
+                <li>To expand on my knowledge</li>
+                <li>To be able to get a job</li>
+                <li>To have fun programming</li>
+            </ol>
+        </div>
+    )
+}
+
+ReactDom.render(
+    <div>
+        <PageComponent />
+    </div>,
+    document.getElementById("root")
+)
