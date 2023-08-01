@@ -18,13 +18,31 @@ into their own files.
 */
 
 import Header from "./Header"
-import Content from "./Content"
-import Footer from "./Footer"
 
-function App() {
+function Content() {
     return (
         <div>
-            <Header />
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>To expand on my knowledge</li>
+                <li>To be able to get a job</li>
+                <li>To have fun programming</li>
+            </ol>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <small>© 2023 McDermott development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function Page() {
+    return (
+        <div>
             <Content />
             <Footer />
         </div>
@@ -33,7 +51,7 @@ function App() {
 
 ReactDOM.render(
     <div>
-        <App />
+        <Page />
     </div>,
     document.getElementById("root")
 )

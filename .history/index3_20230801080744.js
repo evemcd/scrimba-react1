@@ -21,7 +21,7 @@ import Header from "./Header"
 import Content from "./Content"
 import Footer from "./Footer"
 
-function App() {
+function Page() {
     return (
         <div>
             <Header />
@@ -33,7 +33,7 @@ function App() {
 
 ReactDOM.render(
     <div>
-        <App />
+        <Page />
     </div>,
     document.getElementById("root")
 )

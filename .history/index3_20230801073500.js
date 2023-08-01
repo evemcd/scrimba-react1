@@ -13,15 +13,47 @@ Part 3:
 - Using flexbox, line up the nav items horizontally, and put them inline with the React logo.
 - Change the image styling to happen in CSS instead of in-line. For practice, add a new class to the image in order to style it
 
-Challenge 2: move theHeader, Footer and MainContent components
+Challenge 2: move the Footer and MainContent components
 into their own files.
 */
 
-import Header from "./Header"
-import Content from "./Content"
-import Footer from "./Footer"
+function Header() {
+    return (
+        <header>
+            <nav className="nav">
+                <img src="./react-logo.png" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
 
-function App() {
+function Content() {
+    return (
+        <div>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>To expand on my knowledge</li>
+                <li>To be able to get a job</li>
+                <li>To have fun programming</li>
+            </ol>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <small>© 2023 McDermott development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function Page() {
     return (
         <div>
             <Header />
@@ -33,7 +65,7 @@ function App() {
 
 ReactDOM.render(
     <div>
-        <App />
+        <Page />
     </div>,
     document.getElementById("root")
 )
